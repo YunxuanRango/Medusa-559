@@ -41,6 +41,7 @@ def main(args):
             torch_dtype=torch.float16,
             low_cpu_mem_usage=True,
             device_map="auto",
+            offload_folder = "/tmp",
             load_in_8bit=args.load_in_8bit,
             load_in_4bit=args.load_in_4bit,
         )
